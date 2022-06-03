@@ -73,7 +73,7 @@ void Swap(char BoardA[rows][cols], char BoardB[rows][cols]){
 void drawBoard(char BoardA[rows][cols]){
     for(int i=0; i <rows; i++){
         for(int j=0; j<cols; j++){
-            if(BoardA[i][j]){
+            if(BoardA[i][j]==1){
                 printf("█"); 
            }else{
                printf(" ");
@@ -90,7 +90,7 @@ int main(char BoardA [rows][cols],char BoardB [rows][cols]){
 
     while(1){
         system("clear"); 
-        //drawBoard(BoardA); //pointer to a new board
+        drawBoard(BoardA); //pointer to a new board
 
         Evo(BoardA, BoardB); 
 
